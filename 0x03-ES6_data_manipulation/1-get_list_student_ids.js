@@ -1,9 +1,6 @@
-function getListStudentIds(students) {
-    // Check if the input is an array
-    if (!Array.isArray(students)) {
-        return [];
-    }
-
-    // Map the array of objects to an array of ids
-    return students.map(student => student.id);
+export default function getListStudentIds(arg) {
+  if (Array.isArray(arg)) {
+    return arg.map((arg) => arg.id);
+  }
+  return [];
 }
